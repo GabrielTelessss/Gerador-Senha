@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Keywors" content="Gerador De Senha, gerador passoward">
+    <title>Gerador de Senha</title>
+
+    <link rel="stylesheet" href="./src/css/index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans:wght@400;700&family=Red+Hat+Display:wght@300;400;500;600;700&family=Roboto+Condensed:ital,wght@0,100;0,400;1,600&family=Roboto:wght@100;300;700&family=Rubik&family=Rubik+Glitch&family=Secular+One&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <h1 class="titulo">Gerador de senha</h1>
+    <main class="container-input">
+        <span>Tamanho <span id="valor"></span> Caracteres</span>
+        <input type="range" name="slider" id="slider" max="25" min="5" value="15">
+
+        <button id="button" class="button-cta" onclick="generatePassword()">Gerar Senha</button>
+    </main>
+
+    <div id="container-password" onclick="copyPasswoard()" class="container-password hide">
+        <span class="title">Sua Senha Gerada foi:</span>
+        <span id="passoward" class="passoward">1233</span>
+        <span class="tooltip">Clique na Senha Para Copiar.</span>
+    </div>
+
+
+    <script src="./src/js/index.js"></script>
+</body>
+</html>
+
